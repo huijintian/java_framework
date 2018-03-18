@@ -12,6 +12,7 @@
         <module>dubbo</module>
         <module>netty</module>
         <module>base</module>
+        <module>tika</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -25,6 +26,7 @@
 
         <dubbo.version>2.6.0</dubbo.version>
         <akka.version>2.5.2</akka.version>
+        <tika.version>1.17</tika.version>
     </properties>
 
     <dependencies>
@@ -48,6 +50,17 @@
             <version>${akka.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+            <version>${tika.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-parsers</artifactId>
+            <version>${tika.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
