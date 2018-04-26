@@ -1,4 +1,4 @@
-package cn.tian.dl4j.datavec;
+package cn.tian.dl4j.datavec.basic;
 
 import org.datavec.api.transform.ReduceOp;
 import org.datavec.api.transform.TransformProcess;

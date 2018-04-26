@@ -13,6 +13,7 @@
         <module>netty</module>
         <module>base</module>
         <module>tika</module>
+        <module>DL4J</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -39,7 +40,7 @@
         </dependency>
 
         <!--akka-->
-        <dependency>
+        <!--<dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-cluster_2.11</artifactId>
             <version>${akka.version}</version>
@@ -48,7 +49,7 @@
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-remote_2.11</artifactId>
             <version>${akka.version}</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>org.apache.tika</groupId>
@@ -69,4 +70,24 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <locales>en,fr</locales>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

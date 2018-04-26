@@ -1,4 +1,4 @@
-package cn.tian.dl4j.datavec;
+package cn.tian.dl4j.datavec.basic;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
