@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>datavec</module>
+        <module>dl4j-example</module>
     </modules>
 
     <properties>
