@@ -15,7 +15,7 @@ import java.io.*;
  */
 public class PDFParse {
     public static void main(String[] args) throws IOException, TikaException, SAXException {
-        String filename = "/Users/mengtian/Documents/BOOK/AI论文教程/D14-1181-cnn文本分类.pdf";
+        String filename = "/Users/mengtian/Documents/BOOK/AI论文/D14-1181-cnn文本分类.pdf";
 
         String text = parsing(filename);
         System.out.println(text);

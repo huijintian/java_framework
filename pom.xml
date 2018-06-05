@@ -14,7 +14,7 @@
         <module>base</module>
         <module>tika</module>
         <module>DL4J</module>
-        <module>spring-mvc</module>
+        <module>microservices</module>
     </modules>
     <packaging>pom</packaging>
 
