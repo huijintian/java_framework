@@ -1,0 +1,6 @@
+spring:
+  boot:
+    admin:
+      url: http://localhost:8090/
+management.security.enabled: false
+debug: true
