@@ -17,6 +17,7 @@
         <module>microservices</module>
         <module>spring-data</module>
         <module>springboot</module>
+        <module>other</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -33,6 +34,7 @@
         <tika.version>1.17</tika.version>
         <spring.version>4.3.8.RELEASE</spring.version>
         <lombok.version>1.16.18</lombok.version>
+        <jedis.version>2.9.0</jedis.version>
     </properties>
 
     <dependencies>
