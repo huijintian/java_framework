@@ -1,6 +1,11 @@
 # java_framework
 一些学习工作上用到的技术的demo
 
+#### base
+jdk中各个api的使用
+
+jdk8中的大部分例子来自于 《Java 8 简明教程》
+
 #### DL4J
 datavec中的代码运行时需要添加参数
     
