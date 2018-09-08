@@ -16,5 +16,11 @@
         <module>dubbo-common</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
