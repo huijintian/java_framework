@@ -20,6 +20,7 @@
         <module>other</module>
         <module>rpc-framework-study</module>
         <module>spi</module>
+        <module>redis</module>
     </modules>
     <packaging>pom</packaging>
 
