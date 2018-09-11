@@ -21,6 +21,7 @@
         <module>rpc-framework-study</module>
         <module>spi</module>
         <module>redis</module>
+        <module>zookeeper</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -124,6 +125,12 @@
                 <version>2.9.0</version>
                 <type>jar</type>
                 <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>3.4.13</version>
             </dependency>
 
             <dependency>

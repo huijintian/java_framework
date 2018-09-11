@@ -18,3 +18,6 @@ datavec中的代码运行时需要添加参数
 
 #### rpc-framework-study
 对rpc的简单入门，项目代码来自于 http://javatar.iteye.com/blog/1123915
+
+#### redis
+redis基本操作以及某些使用场景场景，来自于 [Redis 命令参考](http://redisdoc.com/index.html)
