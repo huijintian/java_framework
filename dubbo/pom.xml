@@ -14,12 +14,18 @@
     <modules>
         <module>dubbo-simple1</module>
         <module>dubbo-common</module>
+        <!--<module>dubbo-provider</module>-->
     </modules>
 
     <dependencies>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
         </dependency>
     </dependencies>
 

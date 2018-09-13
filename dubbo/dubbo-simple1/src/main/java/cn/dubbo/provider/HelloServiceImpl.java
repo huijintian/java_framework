@@ -7,6 +7,7 @@ import cn.dubbo.service.HelloService;
  */
 public class HelloServiceImpl implements HelloService {
     public String sayHello(String name) {
+        System.out.println("name:" + name);
         return "Hello " + name;
     }
 }

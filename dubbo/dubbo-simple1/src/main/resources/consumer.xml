@@ -10,9 +10,12 @@
     <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
     <dubbo:application name="consumer-of-helloworld-app"/>
 
-    <!-- 使用multicast广播注册中心暴露发现服务地址 -->
-    <dubbo:registry address="multicast://224.5.6.7:1234"/>
+    <!-- 使用zk注册中心暴露发现服务地址 -->
+    <dubbo:registry protocol="zookeeper" group="hello" address="127.0.0.1:2181" client="curator"/>
 
-    <!-- 生成远程服务代理，可以和本地bean一样使用demoService,check表示启动时是否检查此服务可用性 -->
-    <dubbo:reference id="helloService" interface="cn.dubbo.service.HelloService" check="true"/>
+    <!-- 生成远程服务代理，可以和本地bean一样使用demoService,
+    check表示启动时是否检查此服务可用性,
+    loadbalance 使用哪种负载均衡策略1、random，2、roundrobin，3、leastActive，4、consistentHash -->
+    <dubbo:reference id="helloService" interface="cn.dubbo.service.HelloService"
+                     check="true" loadbalance="roundrobin" cache="lru"/>
 </beans>

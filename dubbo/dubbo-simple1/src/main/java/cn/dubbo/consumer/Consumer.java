@@ -14,7 +14,13 @@ public class Consumer {
         context.start();
 
         HelloService demoService = (HelloService) context.getBean("helloService");
-        String hello = demoService.sayHello("world");
-        System.out.println(hello);
+        for (int i = 0; i < 10; i++) {
+            demoService.sayHello("hello, i num " + i);
+        }
+        for (int i = 0; i < 10; i++) {
+            demoService.sayHello("hello, i num " + i);
+        }
+        /*String hello = demoService.sayHello("world");
+        System.out.println(hello);*/
     }
 }
