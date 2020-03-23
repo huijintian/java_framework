@@ -1,7 +1,6 @@
 package concurrent;
 
 import net.jcip.annotations.ThreadSafe;
-import net.sf.ehcache.concurrent.Sync;
 
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 

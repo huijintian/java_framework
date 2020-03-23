@@ -1,5 +1,6 @@
 package jvm;
 
+
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 
@@ -7,9 +8,9 @@ import org.springframework.cglib.proxy.MethodInterceptor;
  * Created by mengtian on 2018/7/12
  * <p>
  * 借助CGLib使方法区出现内存溢出异常
- * VM Args: -XX:PermSize=10M -XX:MaxPermSize=10M
- *
- * 注意：此配置在JDK8中执行无异常
+ * VM Args:
+ * JDK7  -XX:PermSize=10M -XX:MaxPermSize=10M
+ * JDK8 -XX:MataspaceSize=10M -XX:MaxMataspaceSize=10M
  */
 public class JavaMethodAreaOOM {
     public static void main(String[] args) {

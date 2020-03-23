@@ -15,13 +15,15 @@
         <module>tika</module>
         <module>DL4J</module>
         <module>microservices</module>
-        <module>spring-data</module>
-        <module>springboot</module>
         <module>other</module>
         <module>rpc-framework-study</module>
         <module>spi</module>
         <module>redis</module>
         <module>zookeeper</module>
+        <module>kafka</module>
+        <module>spring/spring-common</module>
+        <module>spring/springboot</module>
+        <module>spring/springcloud</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -43,7 +45,6 @@
 
     <dependencyManagement>
         <dependencies>
-
             <!--dubbo-->
             <dependency>
                 <groupId>com.alibaba</groupId>
