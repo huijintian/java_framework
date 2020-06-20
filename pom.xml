@@ -24,6 +24,8 @@
         <module>spring/spring-common</module>
         <module>spring/springboot</module>
         <module>spring/springcloud</module>
+        <module>design-pattern</module>
+        <module>distribute-lock</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -37,8 +39,8 @@
 
         <dubbo.version>2.6.0</dubbo.version>
         <akka.version>2.5.2</akka.version>
-        <tika.version>1.17</tika.version>
-        <spring.version>4.3.8.RELEASE</spring.version>
+        <tika.version>1.24</tika.version>
+        <spring.version>5.2.0.RELEASE</spring.version>
         <lombok.version>1.16.18</lombok.version>
         <jedis.version>2.9.0</jedis.version>
     </properties>
@@ -128,7 +130,7 @@
             <dependency>
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
-                <version>2.9.0</version>
+                <version>3.2.0</version>
                 <type>jar</type>
                 <scope>compile</scope>
             </dependency>
@@ -143,7 +145,7 @@
             <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-framework</artifactId>
-                <version>4.0.1</version>
+                <version>4.3.0</version>
             </dependency>
 
             <dependency>

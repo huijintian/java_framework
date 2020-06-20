@@ -52,8 +52,7 @@ public class DistributedLock {
         try {
             jedis = jedisPool.getResource();
             //redis的这个方法保证了操作的原子性
-            String result = jedis.set(lockKey, requestId,
-                    SET_IF_NOT_EXIST, SET_WITH_EXPIRE_TIME, expireTime);
+            String result = jedis.set(lockKey, requestId, SET_IF_NOT_EXIST, SET_WITH_EXPIRE_TIME);
             if (LOCK_SUCCESS.equals(result)) {
                 return true;
             }
