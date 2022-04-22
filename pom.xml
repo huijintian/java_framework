@@ -40,7 +40,7 @@
         <dubbo.version>2.6.0</dubbo.version>
         <akka.version>2.5.2</akka.version>
         <tika.version>1.24</tika.version>
-        <spring.version>5.2.0.RELEASE</spring.version>
+        <spring.version>5.3.19</spring.version>
         <lombok.version>1.16.18</lombok.version>
         <jedis.version>2.9.0</jedis.version>
     </properties>
